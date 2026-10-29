@@ -36,6 +36,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
+        if !Self.isHostingTests && AppMover.offerIfNeeded(defaults: .standard) { return }
         NSWorkspace.shared.notificationCenter.addObserver(
             self, selector: #selector(didWake), name: NSWorkspace.didWakeNotification, object: nil)
         lock.start()
