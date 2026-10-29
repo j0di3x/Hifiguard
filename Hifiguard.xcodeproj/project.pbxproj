@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		F1D0000000000000000000C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1D0000000000000000000A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1D0000000000000000000B1;
+			remoteInfo = Hifiguard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1D0000000000000000000D1 /* Hifiguard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hifiguard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D0000000000000000000D2 /* HifiguardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HifiguardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F1D0000000000000000000E1 /* Hifiguard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Hifiguard;
+			sourceTree = "<group>";
+		};
+		F1D0000000000000000000E2 /* HifiguardTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HifiguardTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1D0000000000000000000F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D0000000000000000000F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1D000000000000000000101 = {
+			isa = PBXGroup;
+			children = (
+				F1D0000000000000000000E1 /* Hifiguard */,
+				F1D0000000000000000000E2 /* HifiguardTests */,
+				F1D000000000000000000102 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1D000000000000000000102 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1D0000000000000000000D1 /* Hifiguard.app */,
+				F1D0000000000000000000D2 /* HifiguardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1D0000000000000000000B1 /* Hifiguard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D000000000000000000201 /* Build configuration list for PBXNativeTarget "Hifiguard" */;
+			buildPhases = (
+				F1D000000000000000000111 /* Sources */,
+				F1D0000000000000000000F1 /* Frameworks */,
+				F1D000000000000000000121 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F1D0000000000000000000E1 /* Hifiguard */,
+			);
+			name = Hifiguard;
+			packageProductDependencies = (
+			);
+			productName = Hifiguard;
+			productReference = F1D0000000000000000000D1 /* Hifiguard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1D0000000000000000000B2 /* HifiguardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1D000000000000000000202 /* Build configuration list for PBXNativeTarget "HifiguardTests" */;
+			buildPhases = (
+				F1D000000000000000000112 /* Sources */,
+				F1D0000000000000000000F2 /* Frameworks */,
+				F1D000000000000000000122 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1D000000000000000000131 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F1D0000000000000000000E2 /* HifiguardTests */,
+			);
+			name = HifiguardTests;
+			packageProductDependencies = (
+			);
+			productName = HifiguardTests;
+			productReference = F1D0000000000000000000D2 /* HifiguardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1D0000000000000000000A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					F1D0000000000000000000B1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					F1D0000000000000000000B2 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = F1D0000000000000000000B1;
+					};
+				};
+			};
+			buildConfigurationList = F1D000000000000000000200 /* Build configuration list for PBXProject "Hifiguard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1D000000000000000000101;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F1D000000000000000000102 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1D0000000000000000000B1 /* Hifiguard */,
+				F1D0000000000000000000B2 /* HifiguardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1D000000000000000000121 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D000000000000000000122 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1D000000000000000000111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D000000000000000000112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1D000000000000000000131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1D0000000000000000000B1 /* Hifiguard */;
+			targetProxy = F1D0000000000000000000C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F1D000000000000000000301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1D000000000000000000302 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1D000000000000000000311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hifiguard-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hifiguard;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.Hifiguard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1D000000000000000000312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hifiguard-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Hifiguard;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.Hifiguard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1D000000000000000000321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.HifiguardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hifiguard.app/Contents/MacOS/Hifiguard";
+			};
+			name = Debug;
+		};
+		F1D000000000000000000322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.HifiguardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hifiguard.app/Contents/MacOS/Hifiguard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1D000000000000000000200 /* Build configuration list for PBXProject "Hifiguard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D000000000000000000301 /* Debug */,
+				F1D000000000000000000302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D000000000000000000201 /* Build configuration list for PBXNativeTarget "Hifiguard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D000000000000000000311 /* Debug */,
+				F1D000000000000000000312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1D000000000000000000202 /* Build configuration list for PBXNativeTarget "HifiguardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D000000000000000000321 /* Debug */,
+				F1D000000000000000000322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1D0000000000000000000A1 /* Project object */;
+}
