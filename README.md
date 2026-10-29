@@ -34,6 +34,11 @@ Music then sounds thin, quiet and muffled until the mic is released.
 - A look-ahead limiter is on by default to prevent clipping.
 - If Hifiguard quits or crashes, normal sound comes back by itself.
 
+### Updates
+- Hifiguard checks GitHub for a new release when it starts and every day at 9:00. If your Mac is asleep at 9:00, it checks when the Mac wakes.
+- When there's a new version, the panel shows a **Download** button. Nothing installs by itself.
+- Turn on **Open at login** so Hifiguard starts (and checks) every time you log in.
+
 ### Lightweight on purpose
 - Native Swift and SwiftUI. No Electron, no web views, no third-party packages.
 - It reacts to system events instead of polling, so CPU use is about 0% while idle.
@@ -71,6 +76,8 @@ Click the menu bar icon:
 | Equalizer switch | Turns the EQ on or off (asks for permission the first time) |
 | Preset / sliders | 12 presets, or set each band yourself (this shows as "Custom") |
 | Limiter | Prevents clipping when you boost bands. Leave it on unless you know why you want it off. |
+| Open at login | Starts Hifiguard when you log in (off by default) |
+| Check for updates daily | On by default. Turn it off and Hifiguard makes no network requests at all. |
 
 **Protect your hearing.** Big EQ boosts on headphones can get very loud. Start with your volume low.
 
@@ -106,7 +113,8 @@ The device-switching logic and the EQ controller sit behind protocols (`AudioSys
 
 ## Privacy
 
-Hifiguard makes no network connections and collects no data: no analytics, no accounts, no licence checks.
+Hifiguard collects no data: no analytics, no accounts, no licence checks.
+Its only network request is the update check: it asks GitHub's public API (`api.github.com/repos/j0di3x/Hifiguard/releases/latest`) for the latest version number. Nothing about you or your Mac is sent beyond what any web request includes (such as your IP address, which GitHub sees). You can turn the update check off in the panel.
 Settings are stored locally in macOS user defaults.
 
 ## Disclaimer

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1 — 2026-10-29
+
+- Update check: at launch and every day at 9:00 (or on wake, if the Mac slept through 9:00). It only shows a Download button and never installs anything by itself. It can be turned off.
+- Open at login option.
+- New look for the installer DMG.
+
 ## 1.0 — 2026-10-29
 
 First release.

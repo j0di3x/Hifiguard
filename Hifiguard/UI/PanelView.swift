@@ -1,9 +1,17 @@
 import AppKit
+import ServiceManagement
 import SwiftUI
 
 struct PanelView: View {
     @Bindable var lock: HiFiLock
     @Bindable var eq: EQController
+    @Bindable var updates: UpdateChecker
+    @State private var openAtLogin = SMAppService.mainApp.status == .enabled
+
+    private func setOpenAtLogin(_ on: Bool) {
+        try? on ? SMAppService.mainApp.register() : SMAppService.mainApp.unregister()
+        openAtLogin = SMAppService.mainApp.status == .enabled
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -36,11 +44,32 @@ struct PanelView: View {
             EQView(eq: eq)
             Divider()
 
+            if let release = updates.available {
+                HStack {
+                    Image(systemName: "arrow.down.circle.fill").foregroundStyle(.tint)
+                    Text("Hifiguard \(release.version) is available").font(.callout)
+                    Spacer()
+                    Button("Download") { NSWorkspace.shared.open(release.url) }
+                }
+            }
+
+            VStack(alignment: .leading, spacing: 4) {
+                Toggle("Open at login", isOn: Binding(get: { openAtLogin }, set: setOpenAtLogin))
+                Toggle("Check for updates daily", isOn: $updates.isAutomatic)
+            }
+            .controlSize(.small)
+
             HStack {
+                Button(updates.isChecking ? "Checking…" : "Check for Updates") { updates.checkNow() }
+                    .disabled(updates.isChecking)
+                if let message = updates.manualCheckMessage {
+                    Text(message).font(.caption).foregroundStyle(.secondary)
+                }
                 Spacer()
-                Button("Quit Hifiguard") { NSApp.terminate(nil) }
+                Button("Quit") { NSApp.terminate(nil) }
                     .keyboardShortcut("q")
             }
+            .controlSize(.small)
         }
         .padding(14)
         .frame(width: 340)

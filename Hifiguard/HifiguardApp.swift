@@ -7,7 +7,7 @@ struct HifiguardApp: App {
 
     var body: some Scene {
         MenuBarExtra {
-            PanelView(lock: appDelegate.lock, eq: appDelegate.eq)
+            PanelView(lock: appDelegate.lock, eq: appDelegate.eq, updates: appDelegate.updates)
         } label: {
             MenuBarLabel(lock: appDelegate.lock)
         }
@@ -19,6 +19,7 @@ struct HifiguardApp: App {
 final class AppDelegate: NSObject, NSApplicationDelegate {
     let lock: HiFiLock
     let eq: EQController
+    let updates: UpdateChecker
 
     /// When the app hosts unit tests it must not touch the real default device.
     private static var isHostingTests: Bool {
@@ -29,6 +30,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let system: AudioSystem = Self.isHostingTests ? InertAudioSystem() : CoreAudioSystem()
         lock = HiFiLock(system: system, defaults: .standard)
         eq = EQController(system: system, tap: SystemAudioTap(), defaults: .standard)
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "0"
+        updates = UpdateChecker(currentVersion: version, defaults: .standard)
         super.init()
     }
 
@@ -37,6 +40,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             self, selector: #selector(didWake), name: NSWorkspace.didWakeNotification, object: nil)
         lock.start()
         eq.start()
+        if !Self.isHostingTests { updates.start() }
     }
 
     func applicationWillTerminate(_ notification: Notification) {
@@ -47,5 +51,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     @objc private func didWake(_ notification: Notification) {
         lock.evaluate()
         eq.rebuild()
+        updates.didWake()
     }
 }
