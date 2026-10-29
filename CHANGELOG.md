@@ -5,6 +5,7 @@
 - Update check: at launch and every day at 9:00 (or on wake, if the Mac slept through 9:00). It only shows a Download button and never installs anything by itself. It can be turned off.
 - Open at login option.
 - New look for the installer DMG.
+- Opened from the DMG or Downloads, Hifiguard offers to move itself to Applications, replaces an older copy, ejects the DMG and restarts.
 
 ## 1.0 — 2026-10-29
 

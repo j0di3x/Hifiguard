@@ -47,9 +47,10 @@ Music then sounds thin, quiet and muffled until the mic is released.
 ## Install
 
 1. Download the latest `Hifiguard-x.y.dmg` from [Releases](../../releases).
-2. Open the DMG and drag **Hifiguard** into **Applications**.
-3. Open Hifiguard. **The first time**, macOS will block it, because the app isn't signed with a paid Apple Developer ID or notarized by Apple:
+2. Open the DMG and double-click **Hifiguard** (or drag it into **Applications** yourself).
+3. **The first time**, macOS will block it, because the app isn't signed with a paid Apple Developer ID or notarized by Apple:
    - Open **System Settings › Privacy & Security**, scroll down to the message about Hifiguard, and click **Open Anyway**.
+   - Hifiguard then offers to **move itself to Applications**. Click **Move to Applications**: it copies itself there (replacing an older version), ejects the DMG, and restarts.
 4. A headphones icon appears in the menu bar. Hifiguard has no Dock icon and no window.
 
 To check that your download wasn't altered, compare its SHA-256 with the `.sha256` file attached to the release:
