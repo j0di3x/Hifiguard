@@ -51,6 +51,10 @@ Music then sounds thin, quiet and muffled until the mic is released.
 - When there's a new version, the panel shows a **Download** button. Nothing installs by itself.
 - Turn on **Open at login** so Hifiguard starts (and checks) every time you log in.
 
+### Languages
+- English, Slovak, German, Hungarian, Russian, Spanish, French, Portuguese (Brazil), Hindi, Arabic, Bengali and Indonesian.
+- Hifiguard follows your Mac's language. If your language isn't listed, it uses English.
+
 ### Lightweight on purpose
 - Native Swift and SwiftUI. No Electron, no web views, no third-party packages.
 - It reacts to system events instead of polling, so CPU use is about 0% while idle.

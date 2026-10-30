@@ -134,13 +134,13 @@ final class UpdateCheckerTests: XCTestCase {
         XCTAssertNil(checker.manualCheckMessage)
         checker.checkNow()
         await settle(checker)
-        XCTAssertEqual(checker.manualCheckMessage, "Couldn't check for updates.")
+        XCTAssertEqual(checker.manualCheckMessage, String(localized: "Couldn't check for updates."))
     }
 
     func testManualCheckUpToDate() async {
         let checker = makeChecker()
         checker.checkNow()
         await settle(checker)
-        XCTAssertEqual(checker.manualCheckMessage, "You're up to date.")
+        XCTAssertEqual(checker.manualCheckMessage, String(localized: "You're up to date."))
     }
 }

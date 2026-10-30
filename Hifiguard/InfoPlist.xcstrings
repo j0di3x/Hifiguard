@@ -1,0 +1,83 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSAudioCaptureUsageDescription": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتاج Hifiguard إلى تسجيل صوت النظام لتطبيق معادل الصوت على كل ما تسمعه. لا يغادر الصوت جهاز Mac أبدًا."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "আপনি যা শোনেন তার সবকিছুতে ইকুয়ালাইজার প্রয়োগ করতে Hifiguard-এর সিস্টেম অডিও রেকর্ডিং দরকার। অডিও কখনো আপনার Mac-এর বাইরে যায় না।"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hifiguard benötigt die Systemaudioaufnahme, um den Equalizer auf alles anzuwenden, was du hörst. Audio verlässt deinen Mac nie."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hifiguard needs System Audio Recording to apply the equalizer to everything you hear. Audio never leaves your Mac."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hifiguard necesita la grabación de audio del sistema para aplicar el ecualizador a todo lo que escuchas. El audio nunca sale de tu Mac."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hifiguard a besoin de l’enregistrement de l’audio système pour appliquer l’égaliseur à tout ce que vous entendez. L’audio ne quitte jamais votre Mac."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आप जो कुछ भी सुनते हैं उस पर इक्वलाइज़र लागू करने के लिए Hifiguard को सिस्टम ऑडियो रिकॉर्डिंग चाहिए। ऑडियो कभी आपके Mac से बाहर नहीं जाता।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Hifiguardnak rendszerhang-rögzítésre van szüksége, hogy a hangszínszabályzót mindenre alkalmazhassa, amit hallasz. A hang sosem hagyja el a Macet."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hifiguard memerlukan Perekaman Audio Sistem untuk menerapkan equalizer ke semua yang Anda dengar. Audio tidak pernah keluar dari Mac Anda."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Hifiguard precisa da gravação de áudio do sistema para aplicar o equalizador a tudo o que você ouve. O áudio nunca sai do seu Mac."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hifiguard нужна запись системного звука, чтобы применять эквалайзер ко всему, что вы слышите. Звук никогда не покидает ваш Mac."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hifiguard potrebuje Nahrávanie systémového zvuku, aby mohol použiť ekvalizér na všetko, čo počujete. Zvuk nikdy neopustí váš Mac."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

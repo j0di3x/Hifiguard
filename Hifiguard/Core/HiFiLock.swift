@@ -17,29 +17,29 @@ enum LockStatus: Equatable {
 
     var title: String {
         switch self {
-        case .noHeadphones: "No Bluetooth headphones"
-        case .hiFi: "Hi-fi"
-        case .callMode, .pinnedByApp: "Call mode"
-        case .noReplacementMic: "No other mic to switch to"
-        case .gaveUp: "Paused: macOS keeps picking headphone mic"
+        case .noHeadphones: String(localized: "No Bluetooth headphones")
+        case .hiFi: String(localized: "Hi-fi")
+        case .callMode, .pinnedByApp: String(localized: "Call mode")
+        case .noReplacementMic: String(localized: "No other mic to switch to")
+        case .gaveUp: String(localized: "Paused: macOS keeps picking headphone mic")
         }
     }
 
     var detail: String? {
         switch self {
         case .callMode(let apps) where !apps.isEmpty:
-            "\(Self.list(apps)) using headphone mic"
+            String(localized: "\(Self.list(apps)) using headphone mic")
         case .pinnedByApp(let apps):
-            "\(Self.list(apps)) chose headphone mic directly. Pick Mac mic in that app."
+            String(localized: "\(Self.list(apps)) chose headphone mic directly. Pick Mac mic in that app.")
         case .gaveUp:
-            "Turn Hi-fi Lock off and on to retry"
+            String(localized: "Turn Hi-fi Lock off and on to retry")
         default:
             nil
         }
     }
 
     private static func list(_ apps: [String]) -> String {
-        apps.isEmpty ? "An app" : apps.joined(separator: ", ")
+        apps.isEmpty ? String(localized: "An app") : apps.formatted(.list(type: .and))
     }
 }
 
