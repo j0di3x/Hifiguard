@@ -143,6 +143,17 @@
 			knownRegions = (
 				en,
 				Base,
+				sk,
+				de,
+				hu,
+				ru,
+				es,
+				fr,
+				"pt-BR",
+				hi,
+				ar,
+				bn,
+				id,
 			);
 			mainGroup = F1D000000000000000000101;
 			minimizedProjectReferenceProxies = 1;
@@ -263,7 +274,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.Hifiguard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -287,7 +298,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.Hifiguard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -301,7 +312,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.HifiguardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hifiguard.app/Contents/MacOS/Hifiguard";
@@ -316,7 +327,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.j0di3x.HifiguardTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hifiguard.app/Contents/MacOS/Hifiguard";

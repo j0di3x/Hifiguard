@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2 — 2026-10-30
+
+- Available in English, Slovak, German, Hungarian, Russian, Spanish, French, Portuguese (Brazil), Hindi, Arabic, Bengali and Indonesian. Hifiguard follows your Mac's language and falls back to English.
+
 ## 1.1 — 2026-10-29
 
 - Update check: at launch and every day at 9:00 (or on wake, if the Mac slept through 9:00). It only shows a Download button and never installs anything by itself. It can be turned off.

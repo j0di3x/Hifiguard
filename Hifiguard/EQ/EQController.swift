@@ -13,12 +13,12 @@ enum EQStatus: Equatable {
 
     var text: String {
         switch self {
-        case .off: "Off"
-        case .waitingForAudio: "On, waiting for audio"
-        case .active: "On"
-        case .needsPermission: "Needs System Audio Recording permission"
-        case .noOutput: "No output device"
-        case .failed(let reason): "Couldn't start: \(reason)"
+        case .off: String(localized: "Off")
+        case .waitingForAudio: String(localized: "On, waiting for audio")
+        case .active: String(localized: "On")
+        case .needsPermission: String(localized: "Needs System Audio Recording permission")
+        case .noOutput: String(localized: "No output device")
+        case .failed(let reason): String(localized: "Couldn't start: \(reason)")
         }
     }
 }

@@ -13,6 +13,7 @@ struct EQView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Equalizer").font(.headline)
                     Text(eq.status.text).font(.caption).foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer()
                 Toggle("Equalizer", isOn: $eq.isEnabled)
@@ -34,7 +35,7 @@ struct EQView: View {
                 set: { name in
                     if let preset = EQPreset.all.first(where: { $0.name == name }) { eq.select(preset) }
                 })) {
-                ForEach(EQPreset.all) { Text($0.name).tag($0.name) }
+                ForEach(EQPreset.all) { Text($0.title).tag($0.name) }
                 if eq.presetName == nil { Text("Custom").tag("") }
             }
 

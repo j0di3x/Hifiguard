@@ -110,9 +110,9 @@ final class UpdateChecker {
             do {
                 let latest = try await fetch()
                 available = AppVersion.isNewer(latest.version, than: currentVersion) ? latest : nil
-                if manual && available == nil { manualCheckMessage = "You're up to date." }
+                if manual && available == nil { manualCheckMessage = String(localized: "You're up to date.") }
             } catch {
-                if manual { manualCheckMessage = "Couldn't check for updates." }
+                if manual { manualCheckMessage = String(localized: "Couldn't check for updates.") }
             }
         }
     }

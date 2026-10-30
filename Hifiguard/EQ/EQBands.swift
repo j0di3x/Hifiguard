@@ -17,6 +17,8 @@ struct EQPreset: Identifiable, Equatable {
     let name: String
     let gains: [Float]
     var id: String { name }
+    /// `name` is what gets saved, so it stays English.
+    var title: String { String(localized: String.LocalizationValue(name)) }
 
     static let all: [EQPreset] = [
         EQPreset(name: "Flat", gains: EQBands.flat),

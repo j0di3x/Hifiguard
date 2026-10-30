@@ -21,6 +21,7 @@ struct PanelView: View {
                     .frame(width: 28)
                 VStack(alignment: .leading, spacing: 2) {
                     Text(lock.status.title).font(.headline)
+                        .fixedSize(horizontal: false, vertical: true)
                     if let detail = lock.status.detail {
                         Text(detail).font(.caption).foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
@@ -60,7 +61,7 @@ struct PanelView: View {
             .controlSize(.small)
 
             HStack {
-                Button(updates.isChecking ? "Checking…" : "Check for Updates") { updates.checkNow() }
+                Button(updates.isChecking ? LocalizedStringKey("Checking…") : "Check for Updates") { updates.checkNow() }
                     .disabled(updates.isChecking)
                 if let message = updates.manualCheckMessage {
                     Text(message).font(.caption).foregroundStyle(.secondary)

@@ -36,12 +36,12 @@ enum AppMover {
 
         NSApp.activate()
         let alert = NSAlert()
-        alert.messageText = "Move Hifiguard to Applications?"
-        alert.informativeText = "Hifiguard will copy itself to your Applications folder and restart from there."
-        alert.addButton(withTitle: "Move to Applications")
-        alert.addButton(withTitle: "Not Now")
+        alert.messageText = String(localized: "Move Hifiguard to Applications?")
+        alert.informativeText = String(localized: "Hifiguard will copy itself to your Applications folder and restart from there.")
+        alert.addButton(withTitle: String(localized: "Move to Applications"))
+        alert.addButton(withTitle: String(localized: "Not Now"))
         alert.showsSuppressionButton = true
-        alert.suppressionButton?.title = "Don't ask again"
+        alert.suppressionButton?.title = String(localized: "Don't ask again")
         let response = alert.runModal()
         if alert.suppressionButton?.state == .on { defaults.set(true, forKey: suppressKey) }
         guard response == .alertFirstButtonReturn else { return false }
@@ -61,8 +61,9 @@ enum AppMover {
             return true
         } catch {
             let failure = NSAlert()
-            failure.messageText = "Couldn't move Hifiguard"
-            failure.informativeText = "\(error.localizedDescription)\n\nDrag Hifiguard into your Applications folder yourself."
+            failure.messageText = String(localized: "Couldn't move Hifiguard")
+            let hint = String(localized: "Drag Hifiguard into your Applications folder yourself.")
+            failure.informativeText = "\(error.localizedDescription)\n\n\(hint)"
             failure.runModal()
             return false
         }
