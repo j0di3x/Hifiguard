@@ -13,6 +13,13 @@
 > **This app is vibecoded.** It was built mostly by an AI coding assistant, with a human directing the work and testing it on real hardware.
 > Read the code before you trust it with anything important. Issues and PRs are welcome.
 
+<p align="center">
+  <img src="docs/images/panel-light.png" width="300" alt="Hifiguard panel in light mode, showing Hi-fi status and the equalizer on the Bass Boost preset">
+  &nbsp;&nbsp;
+  <img src="docs/images/panel-dark.png" width="300" alt="The same Hifiguard panel in dark mode">
+</p>
+<p align="center"><sub>The menu bar panel, rendered from the app's real views with sample devices.</sub></p>
+
 ## The problem
 
 When any app opens your Bluetooth headphones' microphone (a video call, a voice memo, a browser tab asking for the mic), macOS switches the headphones into a two-way "headset" mode.
@@ -27,6 +34,11 @@ Music then sounds thin, quiet and muffled until the mic is released.
 - It reacts to headphones connecting and disconnecting, new mics being plugged in, and sleep/wake.
 - **Honest limitation:** some apps (for example a meeting app where you picked the headphone mic yourself) use the headphone mic *directly*, whatever the default is.
   Hifiguard can't change that. Instead, the status line tells you which app is doing it, so you can pick a different mic in that app.
+
+<p align="center">
+  <img src="docs/images/panel-call-mode.png" width="300" alt="Hifiguard in Call mode, naming the app that chose the headphone mic">
+</p>
+<p align="center"><sub>Call mode names the app responsible. "Meeting App" is a sample name.</sub></p>
 
 ### Equalizer (off by default)
 - A 10-band EQ for all system audio (32 Hz to 16 kHz, ±12 dB), with 12 presets.
