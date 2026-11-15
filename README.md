@@ -9,6 +9,8 @@
   A small native menu bar app for macOS 15+ on Apple silicon.
 </p>
 
+<p align="center"><a href="https://ko-fi.com/j0di3x"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-Ko--fi-FF5E5B?logo=kofi&logoColor=white&style=for-the-badge" alt="Buy me a coffee on Ko-fi"></a></p>
+
 > [!NOTE]
 > **This app is vibecoded.** It was built mostly by an AI coding assistant, with a human directing the work and testing it on real hardware.
 > Read the code before you trust it with anything important. Issues and PRs are welcome.
